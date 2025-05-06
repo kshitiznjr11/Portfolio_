@@ -3,67 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1 id="heading">My Portfolio</h1>
-        <nav id="container">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
+    <!-- NAVBAR -->
+     <nav>
+        <div class="left">
+            <a href="/">Kshitiz GC</a>
+        </div>
 
-        </nav>
-    </header>
-    <div>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I am Kshitiz GC, a passionate Frontend Developer. I love creating innovative solutions and working on exciting projects.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Portfolio:</strong> Created a full functional portfolio of myself and showcased the projects i have done and my skills along with my educational background and my contact information to show my skills in <i>HTML</i>, <i>CSS</i> and <i>JavaScript</i>.</li>
-                <li><strong>Library Management System:</strong> Prepared a project on Library Management System with my team in as a college project. Used web development like <i>HTML</i> , <i>CSS</i> and <i>JavaScript</i> and Programming language as <i>PHP</i>. Added the <b>CRUD</b> operation where the admin was allowed to add, update, and delete the books and Students.</li>
-                <li><strong>E-Commerece Website:</strong> Submitted this project in the final semester of my college. The project was build using web development tools and other programming languaget. CRUD operation was applied where admin was allowed to perform CRUD operation on the stocks and Customer was allowed to select, order and make payments.</li>
-            </ul>
-        </section>
-        <section id="skills">
+        <div class="right">
+            <a href="https://github.com/kshitiznjr11"><i class="fa-brands fa-github"></i><span>Github</span></a>
+
+            <a href="https://www.linkedin.com/in/kshitiz-gc-015628190/"><i class="fa-brands fa-linkedin"></i><span>Linkedin</span></a>
+
+            <a href="mailto:kshitiznjr1@gmail.com"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
+        </div>
+     </nav>
+
+     <!-- MAIN -->
+      <main>
+        <!-- SECTION 1: Hero -->
+         <section class="hero-section">
+            <div class="text">
+                <h2>I'm Kshitiz 👋</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia tempore iusto officia illo expedita nemo atque, nam molestiae numquam, omnis hic, alias ad veritatis aspernatur sint obcaecati dolore eligendi non qui eum ab. A iusto eligendi id repudiandae quia ipsam dolor distinctio obcaecati, consequuntur quos at assumenda neque unde.</p>
+
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                    
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="headshot">
+                <img src="./images/Kshitiz_pp.JPG" alt="Kshitiz  GC headshot">
+            </div>
+         </section>
+
+         <!-- SECTION 2: Skills -->
+          <section id="skills" class="skills-section">
             <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>React</li>
-                <li>Node.js</li>
-            </ul>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <p>Bachelor of Information Technology, KIST College, 2023</p>
-            <p>+2 Management, Kalika Manavgyan Secondary School, 2018</p>
-        </section>
-        <section id="resume">
-            <h2>Resume</h2>
-            <p><a href="/assets/Kshitiz-GC-Resume.pdf" target="_blank">Download my Resume</a></p>
-            <p>My resume includes detailed information about my education, skills, and work experience.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <a href="mailto:kshitiznjr1@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/kshitiz-gc-015628190/" target="_blank">LinkedIn</a>
-            <a href="https://www.facebook.com/kshitizgc11">Facebook</a>
-            <a href="https://www.instagram.com/kshitizgc11/">Instagram</a>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2025 <b><i>Kshitiz GC</i></b>. All rights reserved.</p>
-    </footer>
+            <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt in repellat quibusdam ducimus ipsa error eum, veniam, optio consectetur possimus magni suscipit! Itaque perferendis, rem consectetur voluptates dolores velit ab!
+            </div>
+            <div class="cells">
+                <div class="cell">
+                    <img src="images/html-logo.webp" alt="html logo">
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/css-logo.webp" alt="css logo">
+                    <span>CSS</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/javascript-logo.webp" alt="javascript logo">
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/node-logo.webp" alt="node logo">
+                    <span>Node.js</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/react-logo.webp" alt="react logo">
+                    <span>React.js</span>
+                </div>
+            </div>
+          </section>
+
+          <!-- SECTION 3: Testimony -->
+           <section id="testimony" class="testimony-section">
+                <h2>Testimony</h2>
+                <div class="group">
+                    <div class="person-details">
+                        <img src="images/ghibli.jpg">
+                        <p>John Doe</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+
+                    <div class="text">
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eligendi vitae exercitationem mollitia eveniet iusto at atque iste quibusdam quam, temporibus, totam minima ipsa dolorum quia omnis iure nihil possimus harum et autem! Et sint in repellendus perspiciatis, sequi vitae. Quisquam veritatis, hic reiciendis quasi doloribus explicabo ab et quos?""
+                    </div>
+                </div>
+           </section>
+
+           <!-- SECTION 4: Contact -->
+            <section id="contact" class="contact-section">
+                <h2>Contact</h2>
+
+                <div class="group">
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque inventore cumque asperiores. Aperiam soluta laborum necessitatibus reiciendis blanditiis eos quas consequatur error odio ad perspiciatis quibusdam id aut, praesentium voluptas vitae dolores quia cumque adipisci, atque nostrum. Nulla ipsa debitis eaque labore error aliquid impedit aperiam ipsum commodi fugiat!
+                    </div>
+
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+
+                        <label for="name">Email</label>
+                        <input type="email" id="email">
+
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="30" rows="10"></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+      </main>
 </body>
 </html>
